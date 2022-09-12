@@ -1,0 +1,49 @@
+:root {
+    --bg-main:      #222222;
+    --fg-main:      #f7f1ff;
+
+    --bg-sec:       #272727;
+    --fg-sec:       #69676c;
+
+    --color-red:    #d6577b;
+    --color-green:  #7bd88f;
+    --color-yellow: #fce566;
+    --color-orange: #fd9353;
+    --color-purple: #948ae3;
+    --color-blue:   #5ad4e6;
+
+    --padding-xsmall: 0.125rem;
+    --padding-small: 0.25rem;
+    --padding-normal: 0.5rem;
+    --padding-large: 1.0rem;
+
+    --border-small: 0.25rem;
+    --border-normal: 0.5rem;
+} 
+
+html {
+    background-color: var(--bg-main);
+    color: var(--fg-main);
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+input {
+    font-size: 1em;
+    background-color: var(--bg-sec);
+    color: inherit;
+    border: none;
+    padding: var(--padding-normal);
+
+    border-radius: var(--border-small);
+}
+
+input:focus {
+    outline: var(--fg-sec) 0.125rem solid;
+    outline-offset: 0.125rem;
+}
